@@ -1,0 +1,16 @@
+{
+  "name": "my-favorite-things",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "material-design-lite": "~1.0.6"
+  },
+  "devDependencies": {
+    "chai": "~3.4.2",
+    "mocha": "~2.3.4",
+    "chrome-historian": "~1.9.1",
+    "chrome-sync": "~1.0.1",
+    "underscore": "~1.8.3",
+    "handlebars": "~4.0.5"
+  }
+}

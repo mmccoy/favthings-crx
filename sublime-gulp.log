@@ -1,0 +1,18 @@
+Remember that you can report errors and get help in https://github.com/NicoSantangelo/sublime-gulp
+
+12-07-2015 11:17:
+/Users/mmccoy/Development/Google/favthings/.sublime-gulp-tmp.js:2
+import gulp from 'gulp';
+^^^^^^
+
+SyntaxError: Unexpected token import
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:404:25)
+    at Object.Module._extensions..js (module.js:432:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:313:12)
+    at Module.require (module.js:366:17)
+    at require (module.js:385:17)
+    at requireGulp (/Users/mmccoy/Library/Application Support/Sublime Text 3/Packages/Gulp/write_tasks_to_cache.js:28:16)
+    at Object.<anonymous> (/Users/mmccoy/Library/Application Support/Sublime Text 3/Packages/Gulp/write_tasks_to_cache.js:80:12)
+    at Module._compile (module.js:425:26)

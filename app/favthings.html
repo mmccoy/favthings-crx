@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Favorite Things</title>
+        <meta name="description" content="Raindrops on roses and whiskers on kittens">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- build:css styles/vendor.css -->
+          <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+        <!-- endbuild -->
+        <!-- build:css styles/main.css -->
+          <link rel="stylesheet" href="css/main.css">
+        <!-- endbuild -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header class="mdl-layout__header is-casting-shadow blue">
+          <div class="container mdl-grid">
+            <div class="logo"></div>
+            <h4>My Favorite Things</h4>
+          </div>
+        </header>
+        <div class="mdl-grid stream">
+          <div class="mdl-spinner mdl-js-spinner is-active"></div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+          <script src="bower_components/jquery/dist/jquery.min.js"></script>
+          <script src="bower_components/material-design-lite/material.min.js"></script>
+          <script src="bower_components/tablesorter/jquery.tablesorter.min.js"></script>
+          <script src="bower_components/handlebars/handlebars.js"></script>
+          <script src="bower_components/underscore/underscore-min.js"></script>
+          <script src="bower_components/moment/min/moment.min.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/favthings.js -->
+          <script src="scripts/favthings.js"></script>
+        <!-- endbuild -->
+
+        <script id="itemTemplate" type="text/x-handlebars-template">
+          <table class="tablesorter mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th data-field="url" class="mdl-data-table__cell--non-numeric">
+                  Sites
+                  <span class="sortIndicator">
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                  </span>
+                </th>
+                <th data-field="visits">
+                  <span class="sortIndicator">
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                  </span>
+                  Visits
+                </th>
+                <th data-field="x-type">
+                  <span class="sortIndicator">
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                  </span>
+                  Typed Transitions
+                </th>
+                <th data-field="x-link">
+                  <span class="sortIndicator">
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                  </span>
+                  Linked Transitions
+                </th>
+                <th data-field="x-bookmark">
+                  <span class="sortIndicator">
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                  </span>
+                  Bookmarked Transitions
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each items}}
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">{{hostname}}</td>
+                <td>{{visits}}</td>
+                <td>{{typedTransitions}}</td>
+                <td>{{linkedTransitions}}</td>
+                <td>{{bookmarkedTransitions}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </script>
+    </body>
+</html>

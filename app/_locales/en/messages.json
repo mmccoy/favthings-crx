@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "My Favorite Things",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Raindrops on roses and whiskers on kittens.",
+    "description": "The description of the application"
+  }
+}

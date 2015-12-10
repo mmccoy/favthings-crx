@@ -1,0 +1,26 @@
+<script id="itemTemplate" type="text/x-handlebars-template">
+  <table>
+    <thead>
+      <tr>
+        <th data-field="url">Sites</th>
+        <th data-field="sessions">Sessions</th>
+        <th data-field="visits">Visits</th>
+        <th data-field="x-type">Typed Transitions</th>
+        <th data-field="x-link">Linked Transitions</th>
+        <th data-field="x-bookmark">Bookmarked Transitions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each items}}
+      <tr>
+        <td>{{url}}</td>
+        <td>{{sessions}}</td>
+        <td>{{visits}}</td>
+        <td>{{typedTransitions}}</td>
+        <td>{{linkedTransitions}}</td>
+        <td>{{bookmarkedTransitions}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</script>
