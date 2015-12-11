@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Favorite Things</title>
+        <title>History by the Numbers</title>
         <meta name="description" content="Raindrops on roses and whiskers on kittens">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,7 +27,7 @@
         <header class="mdl-layout__header is-casting-shadow blue">
           <div class="container mdl-grid">
             <div class="logo"></div>
-            <h4>My Favorite Things</h4>
+            <h4>History by the Numbers</h4>
           </div>
         </header>
         <div class="mdl-grid stream">
@@ -64,12 +64,19 @@
                   </span>
                   All Visits
                 </th>
+                <th data-field="sessions">
+                  <span class="sortIndicator">
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                  </span>
+                  Sessions
+                </th>
                 <th data-field="x-type">
                   <span class="sortIndicator">
                     <i class="material-icons sort-desc">arrow_drop_down</i>
                     <i class="material-icons sort-asc">arrow_drop_up</i>
                   </span>
-                  Via Typing a URL
+                  <span>Via Typing a URL</span>
                 </th>
                 <th data-field="x-link">
                   <span class="sortIndicator">
@@ -92,6 +99,7 @@
               <tr>
                 <td class="mdl-data-table__cell--non-numeric">{{hostname}}</td>
                 <td>{{visits}}</td>
+                <td>{{sessions}}</td>
                 <td>{{typedTransitions}}</td>
                 <td>{{linkedTransitions}}</td>
                 <td>{{bookmarkedTransitions}}</td>

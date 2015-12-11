@@ -143,7 +143,7 @@ gulp.task('copy', () => {
 gulp.task('package', function () {
   var manifest = require('./dist/manifest.json');
   return gulp.src('dist/*')
-      .pipe($.zip('My Favorite Things-' + manifest.version + '.zip'))
+      .pipe($.zip('History by the Numbers-' + manifest.version + '.zip'))
       .pipe(gulp.dest('package'));
 });
 

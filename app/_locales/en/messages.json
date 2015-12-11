@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "My Favorite Things",
+    "message": "History by the Numbers",
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "Raindrops on roses and whiskers on kittens.",
+    "message": "A numerical lens to view chrome://history through.",
     "description": "The description of the application"
   }
 }
